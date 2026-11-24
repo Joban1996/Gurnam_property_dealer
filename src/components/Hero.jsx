@@ -1,7 +1,7 @@
 
 function Hero() {
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-content">
         <h1>Find Your Perfect Property</h1>
 
@@ -11,9 +11,9 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button>Buy Property</button>
-          <button>Rent Property</button>
-        </div>
+  <a href="#properties">Buy Property</a>
+  <a href="#properties">Rent Property</a>
+</div>
       </div>
     </section>
   )

@@ -1,19 +1,20 @@
-
 function Header() {
   return (
     <header>
       <h2>Gurnam Property Dealer</h2>
 
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Properties</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+        <a href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
       </nav>
 
-      <button>Call Now</button>
+      <a href="tel:+919041247534" className="call-now-btn">
+        Call Now
+      </a>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

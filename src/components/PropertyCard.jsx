@@ -1,5 +1,5 @@
 
-function PropertyCard() {
+function PropertyCard({ property }) {
   return (
     <div className="property-card">
 
@@ -13,17 +13,26 @@ function PropertyCard() {
 
       {/* Property Details */}
       <div className="property-card-details">
-        <h3>Modern Family House</h3>
+        <h3>{property.name}</h3>
 
-        <h2>₹85 Lakh</h2>
+<h2>{property.price}</h2>
 
-        <div className="property-specifications">
-          <span>3 Bedrooms</span>
-          <span>2 Bathrooms</span>
-          <span>1 Kitchen</span>
-        </div>
+<div className="property-specifications">
+  <span>{property.bedrooms} Bedrooms</span>
+  <span>{property.bathrooms} Bathrooms</span>
+  <span>{property.kitchen} Kitchen</span>
+</div>
+<a
+  href={`https://wa.me/9041247534?text=${encodeURIComponent(
+    `Hi, I'm interested in ${property.name} listed at ${property.price}. Please share more details.`
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="view-details-btn"
+>
+  View Details
+</a>
       </div>
-
     </div>
   )
 }

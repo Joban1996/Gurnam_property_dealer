@@ -1,7 +1,7 @@
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
 
       <div className="footer-content">
 

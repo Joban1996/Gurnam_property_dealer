@@ -36,7 +36,7 @@ function LatestProperties() {
   },
 ];
   return (
-    <section className="latest-properties">
+    <section id="properties" className="latest-properties">
 
       <div className="latest-properties-header">
         <div>

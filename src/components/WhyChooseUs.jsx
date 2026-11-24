@@ -1,7 +1,7 @@
 
 function WhyChooseUs() {
   return (
-    <section className="why-choose-us">
+    <section id="about" className="why-choose-us">
 
       {/* Left Content */}
       <div className="why-content">

@@ -7,9 +7,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 25px 60px;
   background-color: transparent;
+}
+
+.call-now-btn {
+  display: inline-block;
+  background-color: #d4a84f;
+  color: #172554;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 header h2 {
@@ -124,24 +134,25 @@ header button {
   gap: 15px;
 }
 
-.hero-buttons button {
+.hero-buttons a {
   padding: 14px 25px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.hero-buttons button:first-child {
+.hero-buttons a:first-child {
   background-color: #d4a84f;
   color: #172554;
 }
 
-.hero-buttons button:last-child {
+.hero-buttons a:last-child {
   background-color: white;
   color: #172554;
 }
-
 
 .property-types {
   background-color: #ffffff;
@@ -345,6 +356,12 @@ header button {
 
 /* Latest Properties Section */
 
+.view-details-btn {
+  display: inline-block;
+  margin-top: 20px;
+  position: static;
+}
+
 .latest-properties {
   background-color: #ffffff;
   padding: 100px 8%;
@@ -428,7 +445,7 @@ header button {
 }
 
 .property-card-details {
-  padding: 22px;
+  padding: 22px;  
 }
 
 .property-card-details h3 {
@@ -775,6 +792,10 @@ header button {
   .latest-properties .latest-properties-grid {
     grid-template-columns: minmax(0, 1fr) !important;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
